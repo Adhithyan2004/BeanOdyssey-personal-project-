@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes trasnitionIN {
+  from {
+    opacity: 0;
+    transform: rotate(-20deg);
+  }
+
+  to {
+    opacity: 1;
+    transform: rotate(0);
+  }
+}
+
+body {
+  background-color: #311b01;
+  font-family: "Bebas Neue", sans-serif;
+  color: #ffc484;
+}
+
+.HomeImg {
+  animation: transitionIN 0.75s;
+  z-index: 1;
+}
+
+.HeroHead {
+  animation: transitionInTxt 1s;
+}
+
+.HeroPara {
+  animation: transitionInTxt 1.5s;
+}
+
+.ShopNow {
+  animation: transitionInTxt 0.75s;
+}
+
+.HisHero {
+  animation: transitionInTxt 0.75s;
+}
+
+.CardCnt {
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0 cover 40%;
+}
+
+.ShpCrd {
+  animation: transitionIN 0.75s;
+}
+
+@keyframes transitionIN {
+  from {
+    opacity: 0;
+    transform: translateY(10%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes transitionInTxt {
+  from {
+    opacity: 0;
+    transform: translateY(30%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+    scale: 0.5;
+  }
+  to {
+    opacity: 1;
+    scale: 1;
+  }
+}
+
+::selection {
+  color: rgb(58, 35, 4);
+  background: rgb(255, 201, 25);
+}
