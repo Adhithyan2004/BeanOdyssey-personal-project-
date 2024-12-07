@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer>
       <div className="w-full   text-secondary">
-        <div className="TopSection pt-[5%] w-full flex  justify-center gap-[55vw] ">
+        <div className="TopSection pt-[5%] w-full flex justify-center gap-[55vw]">
           <div className="Left flex flex-col">
             <span className="text-[32px] ">Beanodyssey</span>
             <span className="leading-tight">
@@ -55,7 +55,11 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <img className="pt-[8%] h-[50vh] mx-auto" src={FooterImg} alt="bean odyssey alt logo"/>
+        <img
+          className="pt-[8%] h-[50vh] mx-auto"
+          src={FooterImg}
+          alt="bean odyssey alt logo"
+        />
       </div>
     </footer>
   );
